@@ -76,7 +76,7 @@ $(function(){
 			$('#navbarSupportedContent .nav-item').removeClass('on');
 			$(this).addClass('on').siblings().removeClass('on');
 			if( i == 0){
-				alert('企业主页')
+				// alert('企业主页')
 				// 首页内容
 				$('#hero,#gtco-testimonial').show()
 				// 了解详情 hide
@@ -89,10 +89,10 @@ $(function(){
 				$('#gtco-reservation').hide()
 			}
 			if( i == 1){
-				alert('产品解决方案')
+				// alert('产品解决方案')
 			}
 			if( i == 2){
-				alert('客户案例')
+				// alert('客户案例')
 				$('#gtco-reservation').show()
 				// 了解详情 hide
 				$('#gtco-special-dishes').hide()
@@ -102,7 +102,7 @@ $(function(){
 				$('#gtco-welcome').hide()
 			}
 			if( i == 3){
-				alert('加入我们')
+				// alert('加入我们')
 				// 加入我们 show
 				$('#gtco-welcome').show()
 				// 了解详情 hide
