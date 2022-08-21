@@ -17,16 +17,16 @@ a:focus,button:focus{outline:0;box-shadow:none}
 /* @media (min-width:992px){.boxed-page .section-padding{padding-top:20px;padding-bottom:130px;background-color:#02a7f0!important}} */
 .img-bg{background-size:cover;background-repeat:no-repeat;background-position:center center}
 .img-cover{object-fit:cover;object-position:center}
-.navbar-brand-center{padding-left:70px;padding-right:70px}
-.navbar-brand-center img{height:50px}
+.navbar-brand-center{padding-left:0px;padding-right:70px}
+.navbar-brand-center img{height:40px}
 .footer-logo {
     border-width: 0;
-    width: 335px;
+    width: 400px;
     display: flex;
     margin: 0 auto;
     position: relative;
-    top: 22px;
-    background-color: #fff;
+    top: 42px;
+    background-color: #f2f2f2;
     padding: 20px;
 }
 .nav-link{color:#000}
@@ -41,7 +41,7 @@ a:focus,button:focus{outline:0;box-shadow:none}
 .btn-primary:hover{background-color:#e22104;border-color:#e22104;color:#fff}
 .btn-shadow{box-shadow:-5px 8px 20px 0 rgba(229,16,2,.15)}
 .btn-icon{color:#000}
-.hero{position:relative;background:#000;height:809px;overflow:hidden}
+.hero{position:relative;background:#ccc;height:809px;overflow:hidden}
 .testi-item img{width: 100%; height:908px}
 .hero-info{padding-top:60px}
 @media (min-width:1420px){.hero-info{padding-top:140px}
@@ -85,7 +85,7 @@ a:focus,button:focus{outline:0;box-shadow:none}
 .owl-dot {
     position: relative;
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 25px;
     width: 22px;
     height: 22px;
     cursor: pointer;
@@ -107,7 +107,7 @@ a:focus,button:focus{outline:0;box-shadow:none}
 .team-card:hover .team-desc .team-social-links{opacity:1}
 .team-desc{position:absolute;background:#fff;width:auto;left:15px;bottom:15px;right:15px;text-align:center;padding:15px;height:80px;overflow:hidden;transition:all .3s ease-in-out}
 .team-social-links{opacity:0;transition:all .3s ease-in-out}
-#gtco-reservation{height:650px;margin-bottom:200px}
+#gtco-reservation{height:2650px;margin-bottom:0px}
 #selectPerson+.select2-container--default .select2-selection--single .select2-selection__rendered{line-height:36px;padding-left:12px}
 #selectPerson+.select2-container .select2-selection--single{height:38px;border:1px solid #ced4da}
 #selectPerson+.select2-container--default .select2-selection--single .select2-selection__arrow{height:36px}
@@ -149,8 +149,8 @@ a:focus,button:focus{outline:0;box-shadow:none}
 .col-lg-4{padding:0}
 .wechatOfficialAccount{font-family:&quot;font-style:normal;font-size:24px;color:#e4e4e4;width:120px;height:93px;display:block;text-align:left;float:left;padding:20px 0;margin-left:22px}
 .qrCode {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     position: relative;
 }
 
@@ -195,9 +195,11 @@ a:focus,button:focus{outline:0;box-shadow:none}
 	height: 794px;
 }
 .mastfoot {
-    background: #02a7f0!important;
-    padding-top: 80px;
+    background: #f2f2f2!important;
+    padding-top: 22px;
+    padding-bottom: 0 !important;
 }
+
 
 .testimonial-left {
     border-width: 0px;
@@ -314,6 +316,7 @@ a:focus,button:focus{outline:0;box-shadow:none}
     width: 40px;
     height: 6px;
     border: none;
+	margin: 0 5px;
     background: rgb(0 0 0 / 30%);
 }
 .trailer .owl-dot.active {
@@ -322,4 +325,118 @@ a:focus,button:focus{outline:0;box-shadow:none}
 .trailer .owl-dot span{
     border: none;
 	border-radius:0;
+}
+.smartWaterMarketing {
+    position: relative;
+    overflow: hidden;
+}
+.smartWaterMarketing .line {
+    height: 800px;
+    position: absolute;
+    width: 1px !important;
+    right: 187px;
+    top: 30px;
+    overflow: hidden;
+}
+.smartWaterMarketing .line span {
+    height: 800px;
+    border-left: 1px #999;
+    border-style: dotted;
+    border-width: thin;
+    transform: scaleY(10);
+    width: 1px;
+    display: block;
+}
+.smartWaterMarketing ul {
+    width: 226px;
+    float: right;
+    position: relative;
+    left: 20px;
+    margin-top: 60px;
+}
+.smartWaterMarketing ul li {
+    width: 183px;
+    height: 54px;
+    line-height: 54px;
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 36px;
+    list-style: none;
+    background-color: #f6f6f6;
+    text-indent: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.smartWaterMarketing ul li i {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 16px;
+    left: -34px;
+    border: 1px solid #999;
+	background-color: #fff;
+}
+.smartWaterMarketing ul li.active{color: #fff;background-color: #169bd5;}
+.smartWaterMarketing ul li.active i {
+    background-color: #169bd5;
+    border: none;
+    animation: s2b 1.5s infinite forwards;
+}
+.psos {
+    height: 600px;
+    overflow: hidden;
+    width: 302px;
+    position: relative;
+}
+.psos.active {
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    height: 600px;
+    width: auto;
+    left: 75px;
+}
+.psos.active .line {
+    right: 187px;
+}
+@keyframes s2b { 0%,100%{} 50%{transform: scale(1.1);}}
+
+.btn:hover, a:hover{
+  color: rgb(22, 155, 213);
+}
+.nav-link {
+    color: rgb(54, 54, 54);
+    padding: .5rem 1.5rem !important;
+}
+#u249_text{ align-self: flex-start; padding: 0px 0px 0px 0px; box-sizing: border-box; width: 100%; font-family: '微软雅黑'; font-weight: 400; font-style: normal; font-size: 30px; color: #FFFFFF;position: absolute;
+    left: 163px;
+    top: 316px;}
+#u250_text{align-self: flex-start;padding: 0px 0px 0px 0px;box-sizing: border-box;width: 100%;font-family: '微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight: 700;font-style: normal;font-size: 40px;color: #FFFFFF;    position: absolute;
+    left: 163px;
+    top: 370px;}
+	
+#gtco-reservation{
+	display: none;
+}
+/* 加入我们 */
+#gtco-welcome{
+	display: none;
+}
+/* 了解详情 */
+#gtco-special-dishes{
+	display: none;
+}
+#navbar-header {
+    height: 100px;
+    background: #fff;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+}
+body.static-layout {
+    margin-top: 100px;
 }
