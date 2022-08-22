@@ -45,9 +45,13 @@ $(function(){
 	}
 	$('.closeContactUs').click(function(){
 		$('.contactUsmask,.contactUsPop').hide()
+		var bodyCss = document.querySelector('body')
+		bodyCss.setAttribute("style","overflow: inherit;")
 	})
 	$('.contactUs,.primary_button').click(function(){
 		$('.contactUsmask,.contactUsPop').show()
+		var bodyCss = document.querySelector('body')
+		bodyCss.setAttribute("style","overflow: hidden;")
 	})
 	// 了解详情 左侧导航
 	$('.learnMoreSpecialDishes .box2 ul li').each(function(i){
