@@ -132,7 +132,7 @@ a:focus,button:focus{outline:0;box-shadow:none}
 .only-mobile{display:none!important}
 @media (max-width:992px){.hero{height:100%}
 .boxed-page{padding-top:100px}
-#navbar-header{position:fixed;top:0;height:auto;width:100%;background-color:#fff;z-index:11;padding-top:15px;padding-bottom:15px}
+#navbar-header{position:fixed;top:0;height:auto;width:100%;background-color:#fff;z-index:11;padding-top:15px;padding-bottom:15px;box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2);}
 #navbar-header .dropdown-menu{box-shadow:none!important}
 #navbar-header .navbar-collapse{margin-top:15px;background:#fff!important}
 .only-mobile{display:block!important}
@@ -393,7 +393,7 @@ a:focus,button:focus{outline:0;box-shadow:none}
 }
 .psos.active {
     position: fixed;
-    top: 0;
+    top: 110px;
     margin-top: 0;
     height: 600px;
     width: auto;
