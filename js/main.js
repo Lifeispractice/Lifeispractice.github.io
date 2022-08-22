@@ -28,7 +28,7 @@ $(function(){
 			var scroH = $(document).scrollTop();  //滚动高度
 			var viewH = $(window).height();  //可见高度 
 			var contentH = $(document).height();  //内容高度
-			if(scroH > $('.smartWaterMarketing').offset().top ){
+			if(scroH > $('.smartWaterMarketing').offset().top-100 ){
 				$('.psos').addClass('active')
 			}else{
 				$('.psos').removeClass('active')
