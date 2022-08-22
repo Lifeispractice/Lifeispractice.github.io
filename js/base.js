@@ -20,7 +20,7 @@
     body.style.marginRight = (-(w>cw?w:cw - r * cw)) + 'px'
   }
 
-  if($(window).width()  > 1870 ){
+  if($(window).width()  < 1870 ){
 	windowResize()
 	// 监听窗口尺寸变化
 	window.addEventListener('resize', windowResize);
