@@ -1,4 +1,10 @@
-	// body宽高
+  
+var width0822 = $(window).width()
+var height0822 = $(window).height()
+alert(`当前网站信息 屏幕宽度 ${width0822} 屏幕高度 ${height0822}`)
+
+
+  // body宽高
   // let cw = 1920,ch = 1080
   let cw = 1920,ch = 935
   let body = document.querySelector('body')
