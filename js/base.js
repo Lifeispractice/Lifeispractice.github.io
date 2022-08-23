@@ -30,4 +30,6 @@ alert(`当前网站信息 屏幕宽度 ${width0822} 屏幕高度 ${height0822}`)
 	windowResize()
 	// 监听窗口尺寸变化
 	window.addEventListener('resize', windowResize);
+	  //小屏幕导航定位 sticky
+  	$('.psos').addClass('on').css({'position':'sticky','top':'0','left':'0'})
 }
