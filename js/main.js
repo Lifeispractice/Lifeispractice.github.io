@@ -178,11 +178,24 @@ $(function(){
 		})
 		
 	}
+	var elementModuleToparr2 = []
+	var smartWaterMarketingTop22 = $('.smartWaterMarketing').offset().top
+	$('.elementModule').each(function(index, value) {
+		var elementModuleTop = $('.elementModule').eq(index).offset().top - smartWaterMarketingTop22
+		elementModuleToparr2.push(elementModuleTop)
+		console.log('elementModuleToparr2',elementModuleToparr2)
+	});
 	$(document).scroll(function() {
 		var scroH = $(document).scrollTop();  //滚动高度
 		if(scroH < 400 ){
 			$('.psos').css({'position':'sticky','top':'0','left':'0'})
 		}
+		elementModuleToparr2.forEach(function(event,index){
+			var math = Math.ceil(elementModuleToparr[index])-100
+			if(scroH > math ){
+				$('.psos').css({'top': math })
+			}
+		})
 
 	})
 	
