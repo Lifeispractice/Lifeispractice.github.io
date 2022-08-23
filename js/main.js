@@ -181,7 +181,12 @@ $(function(){
 	var elementModuleToparr2 = []
 	var smartWaterMarketingTop22 = $('.smartWaterMarketing').offset().top
 	$('.elementModule').each(function(index, value) {
-		var elementModuleTop = $('.elementModule').eq(index).offset().top - smartWaterMarketingTop22
+		
+		if(index == 3 || index == 4 || index == 5 ){
+			var elementModuleTop = $('.elementModule').eq(index).offset().top - smartWaterMarketingTop22 + 160
+		}else{
+			var elementModuleTop = $('.elementModule').eq(index).offset().top - smartWaterMarketingTop22
+		}
 		elementModuleToparr2.push(elementModuleTop)
 		console.log('elementModuleToparr2',elementModuleToparr2)
 	});
