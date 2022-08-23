@@ -150,7 +150,23 @@ $(function(){
 			
 		})
 	}
-	
+	if($(window).width()  < 1870 ){
+		$('.smartWaterMarketing ul li').each(function(i){
+			$(this).click(function(){
+				$('.smartWaterMarketing ul li').removeClass('active');
+				$(this).addClass('active').siblings().removeClass('active');
+				var elementModuleTop = $('.elementModule').eq(i).offset().top-80
+				var smartWaterMarketingTop = $('.smartWaterMarketing').offset().top
+				 $('body,html').animate({scrollTop: elementModuleTop },400);
+				if(i==0){$('.psos').css({ 'top': elementModuleTop-smartWaterMarketingTop +200 + "px" });}
+				if(i==1){$('.psos').css({ 'top': elementModuleTop-smartWaterMarketingTop +300 + "px" });}
+				if(i==2){$('.psos').css({ 'top': elementModuleTop-smartWaterMarketingTop +400 + "px" });}
+				if(i==3){$('.psos').css({ 'top': elementModuleTop-smartWaterMarketingTop +500 + "px" });}
+				if(i==4){$('.psos').css({ 'top': elementModuleTop-smartWaterMarketingTop +600 + "px" });}
+				if(i==5){$('.psos').css({ 'top': elementModuleTop-smartWaterMarketingTop +700 + "px" });}
+			})
+		})
+	}
 	
 	
 })
