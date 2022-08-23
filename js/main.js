@@ -196,7 +196,7 @@ $(function(){
 			$('.psos').css({'position':'sticky','top':'0','left':'0'})
 		}
 		elementModuleToparr2.forEach(function(event,index){
-			var math = Math.ceil(elementModuleToparr[index])-100
+			var math = Math.ceil(elementModuleToparr[index])
 			if(scroH > math ){
 				$('.psos').css({'top': math })
 			}
