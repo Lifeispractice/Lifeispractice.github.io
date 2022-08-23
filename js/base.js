@@ -1,7 +1,7 @@
   
 var width0822 = $(window).width()
 var height0822 = $(window).height()
-alert(`当前网站信息 屏幕宽度 ${width0822} 屏幕高度 ${height0822} 更新时间 13：:45`)
+alert(`当前网站信息 屏幕宽度 ${width0822} 屏幕高度 ${height0822} 更新时间 14:07`)
 
 
   // body宽高
@@ -26,7 +26,7 @@ alert(`当前网站信息 屏幕宽度 ${width0822} 屏幕高度 ${height0822} �
     body.style.marginRight = (-(w>cw?w:cw - r * cw)) + 'px'
   }
 
-  if($(window).width()  < 100 ){
+  if($(window).width()  < 1870 ){
 	windowResize()
 	// 监听窗口尺寸变化
 	window.addEventListener('resize', windowResize);
