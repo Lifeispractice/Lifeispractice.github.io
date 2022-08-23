@@ -192,13 +192,14 @@ $(function(){
 				if(scroH > math ){
 					$('.psos').css({'top': math })
 				}
-			})	
+			})
+			if(scroH > $('.smartWaterMarketing ul li').eq(5).offset().top){
+				$('.smartWaterMarketing ul li').eq(5).addClass('active').siblings().removeClass('active');
+			}
 			
 		})
 		
 	}
 	
-	$('.smartWaterMarketing ul li').eq(5).click(function(){
-		$('.smartWaterMarketing ul li').eq(5).addClass('active').siblings().removeClass('active');
-	})
+	
 })
