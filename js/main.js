@@ -187,9 +187,7 @@ $(function(){
 	}
 	$(document).scroll(function() {
 		var scroH = $(document).scrollTop();  //滚动高度
-		
-		
-		if(scroH == 0 ){
+		if(scroH < 400 ){
 			$('.psos').css({'position':'sticky','top':'0','left':'0'})
 		}
 
