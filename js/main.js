@@ -193,9 +193,7 @@ $(function(){
 					$('.psos').css({'top': math })
 				}
 			})
-			if(scroH > $('.smartWaterMarketing ul li').eq(5).offset().top){
-				$('.smartWaterMarketing ul li').eq(5).addClass('active').siblings().removeClass('active');
-			}
+			
 			
 		})
 		
