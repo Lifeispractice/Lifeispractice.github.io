@@ -183,15 +183,7 @@ $(function(){
 				
 			})
 		})
-		$(document).scroll(function() {
-			var smartWaterMarketingTop2 = $('.smartWaterMarketing').offset().top
-			var scroH = $(document).scrollTop();  //滚动高度
-			
-			if(scroH == 0 ){
-				$('.psos').animate({ 'top': "0px" },400);
-			}
-			
-		})
+		
 	}
 	
 	
