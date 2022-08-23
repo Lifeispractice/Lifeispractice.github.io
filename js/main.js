@@ -1,16 +1,9 @@
 var identification=0
-
-
-  
-  
+var elementModuleToparr = []
 $(function(){
 	
-	
-  
-  
 	if(window.location.pathname == '/tags/'){
-		// elementModuleToparr
-		var elementModuleToparr = []
+		
 		$('.elementModule').each(function(index, value) {
 			var elementModuleTop = $('.elementModule').eq(index).offset().top
 			elementModuleToparr.push(elementModuleTop)
