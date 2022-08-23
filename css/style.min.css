@@ -388,13 +388,14 @@ a:focus,button:focus{outline:0;box-shadow:none}
 .psos {
     height: 600px;
     overflow: hidden;
-    width: 302px;
+/*  width: 302px; */
+    width: auto;
     position: relative;
 }
 .psos.active {
     position: fixed;
     top: 110px;
-    left: 75px;
+    left: 65px;
 }
 .psos.on.active{
     position: absolute;
