@@ -191,6 +191,18 @@ $(function(){
 				$('.psos').animate({ 'top': "0px" },400);
 			}
 			
+			
+				var elementModuleTop = $('.elementModule').eq(i).offset().top-80
+				var smartWaterMarketingTop = $('.smartWaterMarketing').offset().top
+// 				 $('body,html').animate({scrollTop: elementModuleTop },400);
+				
+				if(i==0){$('.psos').animate({ 'top': elementModuleTop-smartWaterMarketingTop +200 + "px" },400);}
+				if(i==1){$('.psos').animate({ 'top': elementModuleTop-smartWaterMarketingTop +300 + "px" },400);}
+				if(i==2){$('.psos').animate({ 'top': elementModuleTop-smartWaterMarketingTop +400 + "px" },400);}
+				if(i==3){$('.psos').animate({ 'top': elementModuleTop-smartWaterMarketingTop +450 + "px" },400);}
+				if(i==4){$('.psos').animate({ 'top': elementModuleTop-smartWaterMarketingTop +500 + "px" },400);}
+				if(i==5){$('.psos').animate({ 'top': elementModuleTop-smartWaterMarketingTop +550 + "px" },400);}
+			
 		})
 	}
 	
