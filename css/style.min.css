@@ -394,9 +394,6 @@ a:focus,button:focus{outline:0;box-shadow:none}
 .psos.active {
     position: fixed;
     top: 110px;
-    margin-top: 0;
-    height: 600px;
-    width: auto;
     left: 75px;
 }
 .psos.on.active{
