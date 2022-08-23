@@ -188,12 +188,12 @@ $(function(){
 	$(document).scroll(function() {
 		var scroH = $(document).scrollTop();  //滚动高度
 		if(scroH < 400 ){
-			$('.psos').css({'position':'sticky','top':'0','left':'0'})
+			$('.psos').animate({'position':'sticky','top':'0','left':'0'})
 		}
 		elementModuleToparr2.forEach(function(event,index){
 			var math = Math.ceil(elementModuleToparr[index])-100
 			if(scroH > math ){
-				$('.psos').css({'top': math })
+				$('.psos').animate({'top': math },400)
 			}
 		})
 
