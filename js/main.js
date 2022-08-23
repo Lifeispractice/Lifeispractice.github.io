@@ -166,6 +166,15 @@ $(function(){
 				if(i==5){$('.psos').css({ 'top': elementModuleTop-smartWaterMarketingTop +700 + "px" });}
 			})
 		})
+		$(document).scroll(function() {
+			var smartWaterMarketingTop2 = $('.smartWaterMarketing').offset().top
+			var scroH = $(document).scrollTop();  //滚动高度
+			
+			if(scroH < smartWaterMarketingTop2 ){
+				$('.psos').css({ 'top': "0px" })
+			}
+			
+		})
 	}
 	
 	
