@@ -26,7 +26,7 @@ alert(`当前网站信息 屏幕宽度 ${width0822} 屏幕高度 ${height0822}`)
     body.style.marginRight = (-(w>cw?w:cw - r * cw)) + 'px'
   }
 
-  if($(window).width()  < 1870 ){
+  if($(window).width()  < 1200 ){
 	windowResize()
 	// 监听窗口尺寸变化
 	window.addEventListener('resize', windowResize);
