@@ -132,7 +132,7 @@ $(function(){
 			var viewH = $(window).height();  //可见高度 
 			var contentH = $(document).height();  //内容高度
 			console.log('scroH',scroH)
-			// $('.learnMoreSpecialDishes .box2').offset().top
+			// $('.learnMoreSpecialDishes .box2').offset().top $('.mastfoot').offset().top
 
 			if(scroH > $('.learnMoreSpecialDishes .box2').offset().top ){
 				$('.learnMoreSpecialDishes .box2').addClass('active')
@@ -144,23 +144,13 @@ $(function(){
 		})
 	}
 	if($(window).width()  < 1870 ){
-// 		$('.smartWaterMarketing ul li').each(function(i){
-// 			$(this).click(function(){
-// 				$('.smartWaterMarketing ul li').removeClass('active');
-// 				$(this).addClass('active').siblings().removeClass('active');
-// 				var elementModuleTop = $('.elementModule').eq(i).offset().top-80
-// 				var smartWaterMarketingTop = $('.smartWaterMarketing').offset().top
-// 				 $('body,html').animate({scrollTop: elementModuleTop },400);
-// 				if(i==0){$('.psos').css({ 'top': elementModuleTop-smartWaterMarketingTop +200 + "px" });}
-// 				if(i==1){$('.psos').css({ 'top': elementModuleTop-smartWaterMarketingTop +300 + "px" });}
-// 				if(i==2){$('.psos').css({ 'top': elementModuleTop-smartWaterMarketingTop +400 + "px" });}
-// 				if(i==3){$('.psos').css({ 'top': elementModuleTop-smartWaterMarketingTop +500 + "px" });}
-// 				if(i==4){$('.psos').css({ 'top': elementModuleTop-smartWaterMarketingTop +600 + "px" });}
-// 				if(i==5){$('.psos').css({ 'top': elementModuleTop-smartWaterMarketingTop +700 + "px" });}
-// 			})
-// 		})
+		// 点击的时候滚动检测不执行
+		// var num = 0
+		// 点击的时候 num = 1 滚动检测 num = 1 
+
 		$('.smartWaterMarketing ul li').each(function(i){
 			$(this).click(function(){
+				// num = 1
 				$('.smartWaterMarketing ul li').removeClass('active');
 				$(this).addClass('active').siblings().removeClass('active');
 				var elementModuleTop = $('.elementModule').eq(i).offset().top-80
@@ -177,33 +167,38 @@ $(function(){
 			})
 		})
 		
-	}
-	var elementModuleToparr2 = []
-	var smartWaterMarketingTop22 = $('.smartWaterMarketing').offset().top
-	$('.elementModule').each(function(index, value) {
-		
-		if(index == 3 || index == 4 || index == 5 ){
-			var elementModuleTop = $('.elementModule').eq(index).offset().top - smartWaterMarketingTop22 + 160
-		}else{
-			var elementModuleTop = $('.elementModule').eq(index).offset().top - smartWaterMarketingTop22
-		}
-		elementModuleToparr2.push(elementModuleTop)
-		console.log('elementModuleToparr2',elementModuleToparr2)
-	});
-	$(document).scroll(function() {
-		var scroH = $(document).scrollTop();  //滚动高度
-		if(scroH < 400 ){
-			$('.psos').css({'position':'sticky','top':'0','left':'0'})
-		}
-		elementModuleToparr2.forEach(function(event,index){
-			var math = Math.ceil(elementModuleToparr[index])
-			if(scroH > math ){
-				$('.psos').css({'top': math })
+		var elementModuleToparr2 = []
+		var smartWaterMarketingTop22 = $('.smartWaterMarketing').offset().top
+		$('.elementModule').each(function(index, value) {
+			
+			if(index == 3 || index == 4 ){
+				var elementModuleTop = $('.elementModule').eq(index).offset().top - smartWaterMarketingTop22 + 160
+			}if(index == 5 ){
+				var elementModuleTop = $('.elementModule').eq(index).offset().top - smartWaterMarketingTop22 + 160
+			}else{
+				var elementModuleTop = $('.elementModule').eq(index).offset().top - smartWaterMarketingTop22
+			}
+			elementModuleToparr2.push(elementModuleTop)
+			console.log('elementModuleToparr2',elementModuleToparr2)
+		});
+		$(document).scroll(function() {
+			// num = 1 只是滚动
+			var scroH = $(document).scrollTop();  //滚动高度
+			if(scroH < 400 ){
+				$('.psos').css({'position':'sticky','top':'0','left':'0'})
+			}
+			elementModuleToparr2.forEach(function(event,index){
+				var math = Math.ceil(elementModuleToparr[index])
+				if(scroH > math ){
+					$('.psos').css({'top': math })
+				}
+			})	
+			if(scroH > $('.mastfoot').offset().top){
+				$('.smartWaterMarketing ul li').eq(5).addClass('active').siblings().removeClass('active');
 			}
 		})
-
-	})
+		
+	}
+	
 	
 })
-
-
