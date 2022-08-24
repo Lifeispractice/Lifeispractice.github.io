@@ -5,7 +5,7 @@ $(function(){
 	if(window.location.pathname == '/tags/'){
 		var elementModuleToparr = []
 		$('.elementModule').each(function(index, value) {
-			var elementModuleTop = $('.elementModule').eq(index).offset().top
+			var elementModuleTop = $('.elementModule').eq(index).offset().top-200
 			elementModuleToparr.push(elementModuleTop)
 			console.log(elementModuleToparr)
 		});
