@@ -1,5 +1,5 @@
 var identification=0
-
+alert(1)
 $(function(){
 	
 	if(window.location.pathname == '/tags/'){
