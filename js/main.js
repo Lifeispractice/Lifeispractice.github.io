@@ -230,10 +230,14 @@ $(function(){
     body.style.marginRight = (-(w>cw?w:cw - r * cw)) + 'px'
   }
 
-  if($(window).width()  < 1870 ){
+
 	windowResize()
 	// 监听窗口尺寸变化
 	window.addEventListener('resize', windowResize);
+
+
+  if($(window).width()  < 1870 ){
+	
 	  //小屏幕导航定位 sticky
   	$('.psos').addClass('on').css({'position':'sticky','top':'0','left':'0'})
 }
