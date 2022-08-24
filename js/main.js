@@ -54,27 +54,41 @@ $(function(){
 		bodyCss.style.cssText = "overflow: hidden;";
 		//bodyCss.setAttribute("style","overflow: hidden;")
 	})
-	// 了解详情 左侧导航
-	$('.learnMoreSpecialDishes .box2 ul li').each(function(i){
-		$(this).click(function(){
-			
-			
-			$('.learnMoreSpecialDishes .box2 ul li').removeClass('on');
-			$(this).addClass('on').siblings().removeClass('on');
-			if( i == 0){
-				$('body,html').animate({scrollTop: $('.product_overview1').offset().top-120  },400);
-			}
-			if( i == 1){
-				$('body,html').animate({scrollTop: $('.product_overview2').offset().top-120  },400);
-			}
-			if( i == 2){
-				$('body,html').animate({scrollTop: $('.product_overview3').offset().top-120  },400);
-			}
-			if( i == 3){
-				$('body,html').animate({scrollTop: $('.product_overview4').offset().top-120  },400);
-			}
+	// 了解详情 左侧导航	
+	if(window.location.href.indexOf("#gtco-special-dishes") > 1){
+		var windowHash = window.location.hash
+		var g_value = windowHash.substring(windowHash.lastIndexOf('=')+1, windowHash.length)
+		if(g_value=="6" && g_value=="4" && g_value=="5") $('.learnMoreSpecialDishes .box2 ul li').eq(0).show().siblings().hide();
+		$('.learnMoreSpecialDishes .box2 ul li').each(function(i){
+			$(this).click(function(){
+				
+				
+				$('.learnMoreSpecialDishes .box2 ul li').removeClass('on');
+				$(this).addClass('on').siblings().removeClass('on');
+				if( i == 0){
+					if(g_value=="1") $('body,html').animate({scrollTop: $('.product_overview1').offset().top-120  },400);
+					if(g_value=="2") $('body,html').animate({scrollTop: $('.product_overview11').offset().top-120  },400);
+					if(g_value=="3") $('body,html').animate({scrollTop: $('.product_overview111').offset().top-120  },400);
+				}
+				if( i == 1){
+					if(g_value=="1") $('body,html').animate({scrollTop: $('.product_overview2').offset().top-120  },400);
+					if(g_value=="2") $('body,html').animate({scrollTop: $('.product_overview22').offset().top-120  },400);
+					if(g_value=="3") $('body,html').animate({scrollTop: $('.product_overview222').offset().top-120  },400);
+				}
+				if( i == 2){
+					
+					if(g_value=="1") $('body,html').animate({scrollTop: $('.product_overview3').offset().top-120  },400);
+					if(g_value=="2") $('body,html').animate({scrollTop: $('.product_overview33').offset().top-120  },400);
+					if(g_value=="3") $('body,html').animate({scrollTop: $('.product_overview333').offset().top-120  },400);
+				}
+				if( i == 3){
+					if(g_value=="1") $('body,html').animate({scrollTop: $('.product_overview4').offset().top-120  },400);
+					if(g_value=="2") $('body,html').animate({scrollTop: $('.product_overview44').offset().top-120  },400);
+					if(g_value=="3") $('body,html').animate({scrollTop: $('.product_overview444').offset().top-120  },400);
+				}
+			})
 		})
-	})
+	}
 	// 客户案例
 	$('#navbarSupportedContent .nav-item').each(function(i){
 		$(this).click(function(){
