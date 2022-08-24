@@ -208,9 +208,13 @@ $(function(){
 	
 })
 
+
+// var width0822 = $(window).width()
+// var height0822 = $(window).height()
+
  // body宽高
   // let cw = 1920,ch = 1080
-  let cw = 1920,ch = 1080
+  let cw = width0822 ,ch = height0822
   let body = document.querySelector('body')
   body.style.width = `${cw}px`
   body.style.height = `${ch}px`
