@@ -136,12 +136,12 @@ $(function(){
 		
 		var windowHash = window.location.hash
 		var g_value = windowHash.substring(windowHash.lastIndexOf('=')+1, windowHash.length)
-		if(g_value=="1"){ 	$('.learnMoreSpecialDishes .box3 ul').eq(0).show().siblings().hide() }
-		if(g_value=="2"){ 	$('.learnMoreSpecialDishes .box3 ul').eq(1).show().siblings().hide() }
-		if(g_value=="3"){ 	$('.learnMoreSpecialDishes .box3 ul').eq(2).show().siblings().hide() }
-		if(g_value=="4"){ 	$('.learnMoreSpecialDishes .box3 ul').eq(3).show().siblings().hide() }
-		if(g_value=="5"){ 	$('.learnMoreSpecialDishes .box3 ul').eq(4).show().siblings().hide() }
-		if(g_value=="6"){ 	$('.learnMoreSpecialDishes .box3 ul').eq(5).show().siblings().hide() }
+		if(g_value=="1"){ 	$('.learnMoreSpecialDishes .box3 ul').eq(0).show().siblings().hide(); $('.summary').eq(0).show().siblings().hide(); }
+		if(g_value=="2"){ 	$('.learnMoreSpecialDishes .box3 ul').eq(1).show().siblings().hide(); $('.summary').eq(1).show().siblings().hide(); }
+		if(g_value=="3"){ 	$('.learnMoreSpecialDishes .box3 ul').eq(2).show().siblings().hide(); $('.summary').eq(2).show().siblings().hide(); }
+		if(g_value=="4"){ 	$('.learnMoreSpecialDishes .box3 ul').eq(3).show().siblings().hide(); $('.summary').eq(3).show().siblings().hide(); }
+		if(g_value=="5"){ 	$('.learnMoreSpecialDishes .box3 ul').eq(4).show().siblings().hide(); $('.summary').eq(4).show().siblings().hide(); }
+		if(g_value=="6"){ 	$('.learnMoreSpecialDishes .box3 ul').eq(5).show().siblings().hide(); $('.summary').eq(5).show().siblings().hide(); }
 		
 		
 		$(document).scroll(function() {
