@@ -210,7 +210,7 @@ $(function(){
 
  // body宽高
   // let cw = 1920,ch = 1080
-  let cw = 1920,ch = 935
+  let cw = 1920,ch = 1080
   let body = document.querySelector('body')
   body.style.width = `${cw}px`
   body.style.height = `${ch}px`
