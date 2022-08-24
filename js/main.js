@@ -29,11 +29,14 @@ $(function(){
 			if(scroH > 3023){
 				$('.psos').removeClass('active')
 			}
-			// elementModuleToparr.forEach(function(event,index){
-				// if(scroH > Math.ceil(elementModuleToparr[index])-100 ){
-					// $('.smartWaterMarketing ul li').eq(index).addClass('active').siblings().removeClass('active');
-				// }
-			// })
+			if($(window).width()  > 1870 ){
+				elementModuleToparr.forEach(function(event,index){
+					if(scroH > Math.ceil(elementModuleToparr[index])-100 ){
+						$('.smartWaterMarketing ul li').eq(index).addClass('active').siblings().removeClass('active');
+					}
+				})
+			}
+			
 		})
 	}
 	$('.closeContactUs').click(function(){
