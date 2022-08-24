@@ -445,3 +445,14 @@ body.static-layout {
 .container-fluid.col-md-5.m-3 {
     display: none;
 }
+
+
+body {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 300;
+    color: #000;
+    background-color: #f4ede5;
+    min-width: 1920px;
+    margin: 0 auto;
+    width: 1920px !important;
+}
