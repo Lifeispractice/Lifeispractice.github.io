@@ -1,7 +1,7 @@
 var identification=0
 var width0822 = $(window).width()
 var height0822 = $(window).height()
-alert(`当前网站信息 屏幕宽度 ${width0822} 屏幕高度 ${height0822} 更新时间 周三 10点03 `)
+alert(`当前网站信息 屏幕宽度 ${width0822} 屏幕高度 ${height0822} 更新时间 周三 10点09 `)
 $(function(){
 	
 	if(window.location.pathname == '/tags/'){
@@ -16,7 +16,7 @@ $(function(){
 			$(this).click(function(){
 				$('.smartWaterMarketing ul li').removeClass('active');
 				$(this).addClass('active').siblings().removeClass('active');
-				$('body,html').animate({scrollTop: $('.elementModule').eq(i).offset().top-80 },400);
+				$('body,html').animate({scrollTop: $('.elementModule').eq(i).offset().top-200 },400);
 			})
 		})
 		$(document).scroll(function() {
