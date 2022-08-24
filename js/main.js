@@ -31,7 +31,7 @@ $(function(){
 			}
 			if($(window).width()  > 1870 ){
 				elementModuleToparr.forEach(function(event,index){
-					if(scroH > Math.ceil(elementModuleToparr[index])-100 ){
+					if(scroH > Math.ceil(elementModuleToparr[index]) ){
 						$('.smartWaterMarketing ul li').eq(index).addClass('active').siblings().removeClass('active');
 					}
 				})
