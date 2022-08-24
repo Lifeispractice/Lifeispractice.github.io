@@ -1,7 +1,7 @@
 var identification=0
 var width0822 = $(window).width()
 var height0822 = $(window).height()
-alert(`当前网站信息 屏幕宽度 ${width0822} 屏幕高度 ${height0822} 更新时间 周三 10点32 `)
+
 
 $(function(){
 	
@@ -237,3 +237,17 @@ $(function(){
 	  //小屏幕导航定位 sticky
   	$('.psos').addClass('on').css({'position':'sticky','top':'0','left':'0'})
 }
+
+
+
+function getParenthesesStr(text) {
+    let result = ''
+    let regex = /\((.+?)\)/g;
+    let options = text.match(regex)
+    let option = options[0]
+    result = option.substring(1, option.length - 1)
+    return result
+}
+var scaleNum = getParenthesesStr(document.querySelector("body").style.cssText)
+
+alert(`当前网站信息 屏幕宽度 ${width0822} 屏幕高度 ${height0822} 缩放比例 ${scaleNum} 更新时间 周三 10点32 `)
