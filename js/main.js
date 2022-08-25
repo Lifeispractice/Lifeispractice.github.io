@@ -59,6 +59,8 @@ $(function(){
 		var windowHash = window.location.hash
 		var g_value = windowHash.substring(windowHash.lastIndexOf('=')+1, windowHash.length)
 		if(g_value=="6" || g_value=="4" || g_value=="5") $('.learnMoreSpecialDishes .box2 ul li').eq(0).show().siblings().hide();
+		
+		if(g_value=="3") $('.learnMoreSpecialDishes .box2 ul li').eq(3).hide();
 		$('.learnMoreSpecialDishes .box2 ul li').each(function(i){
 			$(this).click(function(){
 				
