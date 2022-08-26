@@ -97,10 +97,47 @@ $(function(){
 			})
 		})
 	}
-	if(window.location.href == "https://lifeispractice.github.io/" ){ $('#navbarSupportedContent .nav-item a').eq(0).css({'color':'rgb(22, 155, 213)'}).parent().siblings().find('a').css({'color':'#555'}) }
-	if(window.location.href == "https://lifeispractice.github.io/tags/" ){ $('#navbarSupportedContent .nav-item a').eq(1).css({'color':'rgb(22, 155, 213)'}).parent().siblings().find('a').css({'color':'#555'}) }
-	if(window.location.href == "https://lifeispractice.github.io/#gtco-reservation" ){ $('#navbarSupportedContent .nav-item a').eq(2).css({'color':'rgb(22, 155, 213)'}).parent().siblings().find('a').css({'color':'#555'}) }
-	if(window.location.href == "https://lifeispractice.github.io/#gtco-welcome" ){ $('#navbarSupportedContent .nav-item a').eq(3).css({'color':'rgb(22, 155, 213)'}).parent().siblings().find('a').css({'color':'#555'}) }
+	if(window.location.href == "https://lifeispractice.github.io/" ){ 
+		$('#navbarSupportedContent .nav-item a').eq(0).css({'color':'rgb(22, 155, 213)'}).parent().siblings().find('a').css({'color':'#555'})
+		console.log('点击了企业主页')
+		// alert('企业主页')
+		// 首页内容
+		$('#hero,#gtco-testimonial').show()
+		// 了解详情 hide
+		$('#gtco-special-dishes').hide()
+		// 首页内容
+		$('#hero,#gtco-testimonial').hide()
+		// 加入我们 
+		$('#gtco-welcome').hide()
+		// 客户案例
+		$('#gtco-reservation').hide()
+	}
+	if(window.location.href == "https://lifeispractice.github.io/tags/" ){ 
+		$('#navbarSupportedContent .nav-item a').eq(1).css({'color':'rgb(22, 155, 213)'}).parent().siblings().find('a').css({'color':'#555'})
+		
+	}
+	if(window.location.href == "https://lifeispractice.github.io/#gtco-reservation" ){ 
+		$('#navbarSupportedContent .nav-item a').eq(2).css({'color':'rgb(22, 155, 213)'}).parent().siblings().find('a').css({'color':'#555'})
+		console.log('点击了客户案例')
+		// 了解详情 hide
+		$('#gtco-special-dishes').hide()
+		// 首页内容
+		$('#hero,#gtco-testimonial').hide()
+		// 加入我们 
+		$('#gtco-welcome').hide()
+		// alert('客户案例')
+		$('#gtco-reservation').show()
+	}
+	if(window.location.href == "https://lifeispractice.github.io/#gtco-welcome" ){ 
+		$('#navbarSupportedContent .nav-item a').eq(3).css({'color':'rgb(22, 155, 213)'}).parent().siblings().find('a').css({'color':'#555'})
+		$('#gtco-welcome').show()
+		// 了解详情 hide
+		$('#gtco-special-dishes').hide()
+		// 首页内容
+		$('#hero,#gtco-testimonial').hide()
+		// 客户案例
+		$('#gtco-reservation').hide()
+	}
 	// 客户案例
 	$('#navbarSupportedContent .nav-item').each(function(i){
 		$(this).click(function(){
