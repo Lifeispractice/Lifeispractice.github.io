@@ -188,6 +188,7 @@ $(function(){
 				$('#gtco-reservation').hide()
 			}
 		})
+		$('body,html').animate({scrollTop: 0  },0);
 	})
 	// #gtco-special-dishes 了解详情
 	/*
