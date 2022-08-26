@@ -393,9 +393,9 @@ a:focus,button:focus{outline:0;box-shadow:none}
     position: relative;
 }
 .psos.active {
-    position: absolute;
+    position: fixed;
     top: 110px;
-    left: 65px;
+    width: 290px;
 }
 .psos.on.active{
     position: absolute;
