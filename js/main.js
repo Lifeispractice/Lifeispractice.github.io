@@ -91,9 +91,20 @@ $(function(){
 			})
 		})
 	}
+	if(window.location.href == "https://lifeispractice.github.io/" ){ $('#navbarSupportedContent .nav-item a').eq(0).css({'color':'rgb(22, 155, 213)'}).parent().siblings().find('a').css({'color':'#555'}) }
+	if(window.location.href == "https://lifeispractice.github.io/tags/" ){ $('#navbarSupportedContent .nav-item a').eq(1).css({'color':'rgb(22, 155, 213)'}).parent().siblings().find('a').css({'color':'#555'}) }
+	if(window.location.href == "https://lifeispractice.github.io/#gtco-reservation" ){ $('#navbarSupportedContent .nav-item a').eq(2).css({'color':'rgb(22, 155, 213)'}).parent().siblings().find('a').css({'color':'#555'}) }
+	if(window.location.href == "https://lifeispractice.github.io/#gtco-welcome" ){ $('#navbarSupportedContent .nav-item a').eq(3).css({'color':'rgb(22, 155, 213)'}).parent().siblings().find('a').css({'color':'#555'}) }
 	// 客户案例
 	$('#navbarSupportedContent .nav-item').each(function(i){
 		$(this).click(function(){
+			
+			if(window.location.href == "https://lifeispractice.github.io/" ){ $('#navbarSupportedContent .nav-item a').eq(0).css({'color':'rgb(22, 155, 213)'}).parent().siblings().find('a').css({'color':'#555'}) }
+			if(window.location.href == "https://lifeispractice.github.io/tags/" ){ $('#navbarSupportedContent .nav-item a').eq(1).css({'color':'rgb(22, 155, 213)'}).parent().siblings().find('a').css({'color':'#555'}) }
+			if(window.location.href == "https://lifeispractice.github.io/#gtco-reservation" ){ $('#navbarSupportedContent .nav-item a').eq(2).css({'color':'rgb(22, 155, 213)'}).parent().siblings().find('a').css({'color':'#555'}) }
+			if(window.location.href == "https://lifeispractice.github.io/#gtco-welcome" ){ $('#navbarSupportedContent .nav-item a').eq(3).css({'color':'rgb(22, 155, 213)'}).parent().siblings().find('a').css({'color':'#555'}) }
+			
+			
 			$('#navbarSupportedContent .nav-item').removeClass('on');
 			$(this).addClass('on').siblings().removeClass('on');
 			if( i == 0){
