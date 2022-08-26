@@ -2,7 +2,7 @@ var identification=0
 var width0822 = $(window).width()
 var height0822 = $(window).height()
 alert(`当前网站信息 屏幕宽度 ${width0822} 屏幕高度 ${height0822}  更新时间 周五  17点40  `)
-
+var biaoshi = true
 $(function(){
 	
 	if(window.location.pathname == '/tags/'){
@@ -18,6 +18,11 @@ $(function(){
 				$('.smartWaterMarketing ul li').removeClass('active');
 				$(this).addClass('active').siblings().removeClass('active');
 				$('body,html').animate({scrollTop: $('.elementModule').eq(i).offset().top-80 },400);
+				if(i==5){
+					biaoshi = false
+				}else{
+					biaoshi = true
+				}
 			})
 		})
 		$(document).scroll(function() {
@@ -35,11 +40,14 @@ $(function(){
 			if($(window).width()  > 1870 ){
 				
 			}
-			elementModuleToparr.forEach(function(event,index){
+			if(biaoshi){
+				elementModuleToparr.forEach(function(event,index){
 					if(scroH > Math.ceil(elementModuleToparr[index]) ){
 						$('.smartWaterMarketing ul li').eq(index).addClass('active').siblings().removeClass('active');
 					}
 				})
+			}
+			
 		})
 	}
 	$('.closeContactUs').click(function(){
