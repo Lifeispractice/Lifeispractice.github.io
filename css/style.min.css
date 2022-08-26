@@ -457,3 +457,20 @@ body {
     margin: 0 auto;
     width: 1920px !important;
 }
+
+.smartWaterMarketing ul li.active3.active {
+    background-color: #f6f6f6;
+    color: #000;
+}
+.smartWaterMarketing ul li.active3.active i {
+    background-color: #fff;
+    border: 1px solid #999;
+}
+.smartWaterMarketing ul li.active2 {
+    color: #fff;
+    background-color: #169bd5;
+}
+.smartWaterMarketing ul li.active2 i {
+    background-color: #169bd5;
+    border: none;
+}
