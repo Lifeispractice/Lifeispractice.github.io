@@ -139,6 +139,7 @@ $(function(){
 	// 客户案例
 	$('#navbarSupportedContent .nav-item').each(function(i){
 		$(this).click(function(){
+			$('body,html').animate({scrollTop: 0  },0);
 			
 			if(window.location.href == "https://lifeispractice.github.io/" ){ $('#navbarSupportedContent .nav-item a').eq(0).css({'color':'rgb(22, 155, 213)'}).parent().siblings().find('a').css({'color':'#555'}) }
 			if(window.location.href == "https://lifeispractice.github.io/tags/" ){ $('#navbarSupportedContent .nav-item a').eq(1).css({'color':'rgb(22, 155, 213)'}).parent().siblings().find('a').css({'color':'#555'}) }
