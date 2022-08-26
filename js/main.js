@@ -1,7 +1,7 @@
 var identification=0
 var width0822 = $(window).width()
 var height0822 = $(window).height()
-alert(`当前网站信息 屏幕宽度 ${width0822} 屏幕高度 ${height0822}  更新时间 周五  15点49  `)
+alert(`当前网站信息 屏幕宽度 ${width0822} 屏幕高度 ${height0822}  更新时间 周五  16点31  `)
 
 $(function(){
 	
@@ -149,6 +149,7 @@ $(function(){
 			
 			$('#navbarSupportedContent .nav-item').removeClass('on');
 			$(this).addClass('on').siblings().removeClass('on');
+			$(this).find('a').css({'color':'rgb(22, 155, 213)'}).parent().siblings().find('a').css({'color':'#555'})
 			if( i == 0){
 				console.log('点击了企业主页')
 				// alert('企业主页')
