@@ -18,11 +18,7 @@ $(function(){
 				$('.smartWaterMarketing ul li').removeClass('active');
 				$(this).addClass('active').siblings().removeClass('active');
 				$('body,html').animate({scrollTop: $('.elementModule').eq(i).offset().top-80 },400);
-				if(i==5){
-					setTimeout(function(){
-						$('.smartWaterMarketing ul li').eq(5).click()
-					},500)
-				}
+				
 			})
 		})
 		$(document).scroll(function() {
