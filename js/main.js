@@ -1,14 +1,14 @@
 var identification=0
 var width0822 = $(window).width()
 var height0822 = $(window).height()
-alert(`当前网站信息 屏幕宽度 ${width0822} 屏幕高度 ${height0822}  更新时间 周五  19点38  `)
+alert(`当前网站信息 屏幕宽度 ${width0822} 屏幕高度 ${height0822}  更新时间 周五  19点40  `)
 var biaoshi = true
 $(function(){
 	
 	if(window.location.pathname == '/tags/'){
 		var elementModuleToparr = []
 		$('.elementModule').each(function(index, value) {
-			var elementModuleTop = $('.elementModule').eq(index).offset().top-200
+			var elementModuleTop = $('.elementModule').eq(index).offset().top-500
 			elementModuleToparr.push(elementModuleTop)
 			console.log(elementModuleToparr)
 		});
