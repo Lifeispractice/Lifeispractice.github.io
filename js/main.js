@@ -56,9 +56,15 @@ $(function(){
 	})
 	// 了解详情 左侧导航	
 	if(window.location.href.indexOf("#gtco-special-dishes") > 1){
+		$('#navbarSupportedContent .nav-item a').eq(1).css({'color':'rgb(22, 155, 213)'}).parent().siblings().find('a').css({'color':'#555'})
 		var windowHash = window.location.hash
 		var g_value = windowHash.substring(windowHash.lastIndexOf('=')+1, windowHash.length)
 		if(g_value=="6" || g_value=="4" || g_value=="5") $('.learnMoreSpecialDishes .box2 ul li').eq(0).show().siblings().hide();
+		if(g_value=="2"){
+			 $('.learnMoreSpecialDishes .box2 ul li').eq(3).text('创新应用')
+		}else{
+			 $('.learnMoreSpecialDishes .box2 ul li').eq(3).text('功能特点')
+		}
 		
 		if(g_value=="3") $('.learnMoreSpecialDishes .box2 ul li').eq(3).hide();
 		$('.learnMoreSpecialDishes .box2 ul li').each(function(i){
