@@ -435,9 +435,10 @@ a:focus,button:focus{outline:0;box-shadow:none}
     background: #fff;
     position: fixed;
     z-index: 1000;
-    width: 100%;
     top: 0;
     box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2);
+    width: 1920px;
+    margin: 0 auto;
 }
 body.static-layout {
     margin-top: 100px;
