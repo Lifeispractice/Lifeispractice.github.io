@@ -441,7 +441,7 @@ a:focus,button:focus{outline:0;box-shadow:none}
     margin: 0 auto;
 }
 body.static-layout {
-    margin-top: 100px;
+    margin-top: 0px;
 }
 .container-fluid.col-md-5.m-3 {
     display: none;
