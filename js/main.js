@@ -44,7 +44,12 @@ $(function(){
 			}
 			elementModuleToparr.forEach(function(event,index){
 				if(scroH > Math.ceil(elementModuleToparr[index]) ){
-					$('.smartWaterMarketing ul li').eq(index).addClass('active').siblings().removeClass('active');
+					if(index == 5){
+						$('.smartWaterMarketing ul li').eq(5).addClass('active').siblings().removeClass('active');
+					}else{
+						$('.smartWaterMarketing ul li').eq(index).addClass('active').siblings().removeClass('active');
+					}
+					
 				}
 			})
 			
