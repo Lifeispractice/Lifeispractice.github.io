@@ -105,8 +105,6 @@ $(function(){
 		$('#hero,#gtco-testimonial').show()
 		// 了解详情 hide
 		$('#gtco-special-dishes').hide()
-		// 首页内容
-		$('#hero,#gtco-testimonial').hide()
 		// 加入我们 
 		$('#gtco-welcome').hide()
 		// 客户案例
@@ -157,8 +155,6 @@ $(function(){
 				$('#hero,#gtco-testimonial').show()
 				// 了解详情 hide
 				$('#gtco-special-dishes').hide()
-				// 首页内容
-				$('#hero,#gtco-testimonial').hide()
 				// 加入我们 
 				$('#gtco-welcome').hide()
 				// 客户案例
