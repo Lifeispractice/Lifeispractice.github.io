@@ -26,6 +26,8 @@ $(function(){
 			})
 		})
 		$(document).scroll(function() {
+			$('.smartWaterMarketing ul li').removeClass('active2 active3')
+
 			var scroH = $(document).scrollTop();  //滚动高度
 			var viewH = $(window).height();  //可见高度 
 			var contentH = $(document).height();  //内容高度
@@ -40,13 +42,11 @@ $(function(){
 			if($(window).width()  > 1870 ){
 				
 			}
-			if(biaoshi){
-				elementModuleToparr.forEach(function(event,index){
-					if(scroH > Math.ceil(elementModuleToparr[index]) ){
-						$('.smartWaterMarketing ul li').eq(index).addClass('active').siblings().removeClass('active');
-					}
-				})
-			}
+			elementModuleToparr.forEach(function(event,index){
+				if(scroH > Math.ceil(elementModuleToparr[index]) ){
+					$('.smartWaterMarketing ul li').eq(index).addClass('active').siblings().removeClass('active');
+				}
+			})
 			
 		})
 	}
