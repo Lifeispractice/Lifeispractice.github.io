@@ -21,7 +21,7 @@ $(function(){
 				if(i==5){
 					setTimeout(function(){
 						$('.smartWaterMarketing ul li').eq(5).click()
-					},100)
+					},500)
 				}
 			})
 		})
