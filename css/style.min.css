@@ -393,7 +393,7 @@ a:focus,button:focus{outline:0;box-shadow:none}
     position: relative;
 }
 .psos.active {
-    position: fixed;
+    position: absolute;
     top: 110px;
     left: 65px;
 }
